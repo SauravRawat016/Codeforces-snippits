@@ -1,0 +1,67 @@
+
+// use to find no. of keys in the set that have a value less than the key in O(logn) time complexity ....................
+Sample link : https://codeforces.com/contest/1915/submission/282816959
+
+< -------------------------------------------------------------------------------------------------------------------------------------------------------------------- >
+
+CODE  : 
+
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+ 
+typedef __gnu_pbds::tree<long long, __gnu_pbds::null_type, less<long long>, __gnu_pbds::rb_tree_tag, __gnu_pbds::tree_order_statistics_node_update> ordered_set;
+
+ 
+ordered_set st;
+
+
+
+int main(){
+
+  st.clear() ;
+  st.order_of_key(value)
+
+}
+
+< ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- >
+
+SNIPPIT :
+
+#include <bits/stdc++.h>
+
+#define all(x) (x).begin(),(x).end()
+
+using namespace std;
+using ll=long long;
+
+ll gcd( ll a,  ll b) 
+{ 
+  if (b == 0) 
+    return a; 
+  return gcd(b, a % b); 
+} 
+
+
+ll lcm(ll a, ll b) 
+{ 
+    return (a / gcd(a, b)) * b; 
+} 
+
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+ 
+typedef __gnu_pbds::tree<ll, __gnu_pbds::null_type, less<ll>, __gnu_pbds::rb_tree_tag, __gnu_pbds::tree_order_statistics_node_update> ordered_set;
+
+ordered_set st; // st.order_of_key(value) ;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;cin>>t;
+    while(t--){
+
+        
+
+        }
+    return 0;
+}
